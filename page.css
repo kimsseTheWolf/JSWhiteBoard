@@ -1,0 +1,246 @@
+body{
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#operate-menu{
+    margin: 0px;
+    padding: 5px;
+    width: 20%;
+    height: 100vh;
+    /* display: inline-block; */
+    float:left;
+    top: 0;
+    background-color: rgb(47, 47, 47);
+    overflow: scroll;
+    color:white;
+}
+.button{
+    margin: 5px;
+    padding: 5px;
+    border-radius: 5px;
+    width:auto;
+    height: fit-content;
+    text-align: center;
+    font-weight: bolder;
+    color: white;
+    background-color: dodgerblue;
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+.button:hover{
+    background-color: rgb(19, 100, 181);
+}
+
+.title-button{
+    margin: 5px;
+    padding: 5px;
+    border-radius: 5px;
+    width:auto;
+    height: fit-content;
+    text-align: left;
+    font-weight: bolder;
+    color: white;
+    background-color: rgba(255,255,255,0);
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+.title-button:hover{
+    background-color: rgba(255,255,255,0.5);
+}
+
+.static-button{
+    display: fixed;
+    right:20px;
+    bottom: 20px;
+    padding: 5px;
+    border-radius: 5px;
+    width:fit-content;
+    height: fit-content;
+    text-align: center;
+    font-weight: bolder;
+    color: white;
+    background-color: dodgerblue;
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+.static-button:hover{
+    background-color: rgb(19, 100, 181);
+}
+
+.dropdown-menu{
+    display: none;
+    margin: 5px;
+    padding: 5px;
+    width: auto;
+    height: fit-content;
+    border-radius: 5px;
+    background-color: rgb(51, 51, 51);
+    transition: background-color 0.5s;
+}
+
+
+.dropdown-menu:hover{
+    background-color: rgb(88, 88, 88);
+}
+
+.menu{
+    display: block;
+    margin: 5px;
+    padding: 5px;
+    width: auto;
+    height: fit-content;
+    border-radius: 5px;
+    background-color: rgb(51, 51, 51);
+    transition: background-color 0.5s;
+    cursor: pointer;
+}
+
+.menu:hover{
+    background-color: rgb(88, 88, 88);
+}
+
+.description-text{
+    font-size: x-small;
+    font-weight: bolder;
+    color: white;
+}
+
+.input{
+    margin: 5px;
+    width: auto;
+    height: 20px;
+    background-color: rgb(47, 47, 47);
+    border-radius: 5px;
+    border-color: dodgerblue;
+    color: white;
+}
+
+#board{
+    top: 0;
+    margin: 0px;
+    padding: 0px;
+    background-color: white;
+    /* display: inline-block; */
+    float:left;
+    width: 79%;
+    height: 100vh;
+    overflow:hidden;
+}
+
+.square{
+    display: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: rgb(0,0,0,1);
+    margin-top: 0px;
+    margin-left: 0px;
+    border:0px;
+    border-color: rgb(0,0,0,0);
+}
+
+.red-color{
+    margin: 5px;
+    padding: 5px;
+    width:50px;
+    height:50px;
+    background-color:rgb(255, 34, 0);
+    cursor: pointer;
+    display:inline-block;
+}
+
+.orange-color{
+    margin: 5px;
+    padding: 5px;
+    width:50px;
+    height:50px;
+    background-color:rgb(255, 136, 0);
+    cursor: pointer;
+    display:inline-block;
+}
+
+.yellow-color{
+    margin: 5px;
+    padding: 5px;
+    width:50px;
+    height:50px;
+    background-color:rgb(255, 196, 0);
+    cursor: pointer;
+    display:inline-block;
+}
+
+.green-color{
+    margin: 5px;
+    padding: 5px;
+    width:50px;
+    height:50px;
+    background-color:rgb(0, 189, 22);
+    cursor: pointer;
+    display:inline-block;
+}
+
+.aqua-color{
+    margin: 5px;
+    padding: 5px;
+    width:50px;
+    height:50px;
+    background-color:rgb(0, 230, 230);
+    cursor: pointer;
+    display:inline-block;
+}
+
+.blue-color{
+    margin: 5px;
+    padding: 5px;
+    width:50px;
+    height:50px;
+    background-color:rgb(30, 144, 255);
+    cursor: pointer;
+    display:inline-block;
+}
+
+.purple-color{
+    margin: 5px;
+    padding: 5px;
+    width:50px;
+    height:50px;
+    background-color:rgb(115, 0, 255);
+    cursor: pointer;
+    display:inline-block;
+}
+
+.pink-color{
+    margin: 5px;
+    padding: 5px;
+    width:50px;
+    height:50px;
+    background-color:rgb(255, 0, 242);
+    cursor: pointer;
+    display:inline-block;
+}
+
+.black-color{
+    margin: 5px;
+    padding: 5px;
+    width:50px;
+    height:50px;
+    background-color:rgb(0,0,0);
+    cursor: pointer;
+    display:inline-block;
+}
+
+.white-color{
+    margin: 5px;
+    padding: 5px;
+    width:50px;
+    height:50px;
+    background-color:rgb(255,255,255);
+    cursor: pointer;
+    display:inline-block;
+}
+
+#color-display{
+    margin: 5px;
+    padding: 5px;
+    width: auto;
+    height: 50px;
+}

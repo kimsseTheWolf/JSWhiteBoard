@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodCreate.com</title>
+    <link rel="stylesheet" type="text/css" href="./page.css">
+</head>
+<script type="text/javascript" src="./process.js"></script>
+<body>
+    <div id="operate-menu">
+        <div id="panel1">
+            <br>
+            <div class="description-text">Paintings</div>
+            <div class="title-button" onclick="dropdown_display('change-color');">Color Panel</div>
+            <div class="dropdown-menu" id="color-panel">
+            <!--Color display-->
+            <div id="color-display"></div>
+                <form id="color-form" action="#">
+                    <div class="description-text">GENRAL COLOR</div>
+                    <div class="description-text">RED</div>
+                    <input type="text" id="c-r" value="255" class="input">
+                    <div class="description-text">GREEN</div>
+                    <input type="text" id="c-g" value="0" class="input">
+                    <div class="description-text">BLUE</div>
+                    <input type="text" id="c-b" value="0" class="input">
+                    <div class="description-text">ALPHA (TRANSPARENCY)</div>
+                    <input type="text" id="c-a" value="1" class="input"><br>
+                    <!--Color Panel-->
+                    <div class="red-color" onclick="shortcut_set_color('red','color');"></div>
+                    <div class="orange-color" onclick="shortcut_set_color('orange','color');"></div>
+                    <div class="yellow-color" onclick="shortcut_set_color('yellow','color');"></div><br>
+                    <div class="green-color" onclick="shortcut_set_color('green','color');"></div>
+                    <div class="aqua-color" onclick="shortcut_set_color('aqua','color');"></div>
+                    <div class="blue-color" onclick="shortcut_set_color('blue','color');"></div><br>
+                    <div class="purple-color" onclick="shortcut_set_color('purple','color');"></div>
+                    <div class="pink-color" onclick="shortcut_set_color('pink','color');"></div>
+                    <div class="black-color" onclick="shortcut_set_color('black','color');"></div><br>
+                    <div class="white-color" onclick="shortcut_set_color('white','color');"></div>
+                    <div class="button" onclick="btn_set_color('color',getElementById('c-r').value,getElementById('c-g').value,getElementById('c-b').value,getElementById('c-a').value);">Set Color</div>
+                </form>
+            </div>
+
+            <div class="title-button" onclick="dropdown_display('create-square');">Add a square</div>
+            <div class="dropdown-menu" id="create-square-menu">
+                <form id="suqare-form" action="#">
+                    <div class="description-text">X-VALUE</div>
+                    <input type="text" id="square-x" class="input">
+                    <div class="description-text">Y-VALUE</div>
+                    <input type="text" id="square-y" class="input">
+                    <div class="description-text">WIDTH</div>
+                    <input type="text" id="square-width" class="input">
+                    <div class="description-text">HEIGHT</div>
+                    <input type="text" id="square-height" class="input">
+                    <div class="button" onclick="create_square(document.getElementById('square-x').value,document.getElementById('square-y').value,document.getElementById('square-width').value,document.getElementById('square-height').value)">Draw</div>
+                </form>
+            </div>
+
+            <div class="title-button" onclick="dropdown_display('create-line');">Add a line</div>
+            <div class="dropdown-menu" id="create-line-menu">
+                <form id="line-form" action="#">
+                    <div class="description-text">START-X</div>
+                    <input type="text" id="line-start-x" class="input">
+                    <div class="description-text">START-Y</div>
+                    <input type="text" id="line-start-y" class="input">
+                    <div class="description-text">END-X</div>
+                    <input type="text" id="line-end-x" class="input">
+                    <div class="description-text">END-Y</div>
+                    <input type="text" id="line-end-y" class="input">
+                    <div class="description-text">THICKNESS</div>
+                    <input type="text" id="line-thickness" class="input">
+                    <div class="button" onclick="create_line(document.getElementById('line-start-x').value,document.getElementById('line-start-y').value,document.getElementById('line-end-x').value,document.getElementById('line-end-y').value,document.getElementById('line-thickness').value);">Create a new line</div>
+                </form>
+            </div>
+
+            <div class="title-button" onclick="dropdown_display('create-text');">Add a text</div>
+            <div class="dropdown-menu" id="create-text-menu">
+                <form id="text-form" action="#">
+                    <div class="description-text">X-VALUE</div>
+                    <input type="text" id="text-x" class="input">
+                    <div class="description-text">Y-VALUE</div>
+                    <input type="text" id="text-y" class="input">
+                    <div class="description-text">FONT SIZE</div>
+                    <input type="text" id="text-size" class="input">
+                    <div class="description-text">CONTENT</div>
+                    <input type="text" id="text-content" class="input">
+                    <div class="button" onclick="create_text(document.getElementById('text-x').value,document.getElementById('text-y').value,document.getElementById('text-size').value,document.getElementById('text-content').value)">Create Text</div>
+                </form>
+            </div>
+
+            <div class="title-button" onclick="dropdown_display('create-circle');">Add a circle</div>
+            <div class="dropdown-menu" id="create-circle-menu">
+                <form id="circle-form" action="#">
+                    <div class="description-text">X-VALUE</div>
+                    <input type="text" id="circle-x" class="input">
+                    <div class="description-text">Y-VALUE</div>
+                    <input type="text" id="circle-y" class="input">
+                    <div class="description-text">WIDTH</div>
+                    <input type="text" id="circle-width" class="input">
+                    <div class="description-text">HEIGHT</div>
+                    <input type="text" id="circle-height" class="input">
+                    <div class="button" onclick="create_circle(document.getElementById('circle-x').value, document.getElementById('circle-y').value, document.getElementById('circle-width').value, document.getElementById('circle-height').value)">Create Circle</div>
+                </form>
+            </div>
+
+            <div class="description-text">Element List</div>
+            <div id="element-list">
+
+            </div>
+        </div>
+    </div>
+    <div id="board">
+        <div class="static-button" onclick="clearup();">Clearup</div>
+    </div>
+</body>
+</html>
